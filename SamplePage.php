@@ -4,7 +4,8 @@
 <h1>Webpage served from EC2 Instance ID:</h1>
 
 <?php  
-echo "<h1>",$EC2_INSTANCE_ID, $EC2_AVAIL_ZONE, "</h1>"
+$instance_id = file_get_contents("http://169.254.169.254/latest/meta-data/instance-id");
+echo $instance_id;
 ?>
 
 <?php

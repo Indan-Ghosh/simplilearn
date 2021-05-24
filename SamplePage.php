@@ -1,7 +1,7 @@
 <?php include "../inc/dbinfo.inc"; ?>
 <html>
 <body>
-<h1>Sample page</h1>
+<h1>Webpage served from EC2 Instance ID: $EC2_INSTANCE_ID in AZ: $EC2_AVAIL_ZONE</h1>
 <?php
 
   /* Connect to MySQL and select . the database. */

@@ -5,11 +5,11 @@
 
 <?php  
 $instance_id = file_get_contents("http://169.254.169.254/latest/meta-data/instance-id");
-$EC2_AVAIL_ZONE=file_get_contents("http://169.254.169.254/latest/meta-data/placement/availability-zone");
+$ec2_avail_zone = file_get_contents("http://169.254.169.254/latest/meta-data/placement/availability-zone");
 $instance_text = "Instance ID:";
-$AvailZone_text = "Availability Zone:";
+$availzone_text = "Availability Zone:";
 echo $instance_text $instance_id;
-echo $AvailZone_text $EC2_AVAIL_ZONE;
+echo $availzone_text $ec2_avail_zone;
 ?>
 
 <?php

@@ -5,11 +5,12 @@
 
 <?php  
 $instance_id = file_get_contents("http://169.254.169.254/latest/meta-data/instance-id");
-$ec2_avail_zone = file_get_contents("http://169.254.169.254/latest/meta-data/placement/availability-zone");
 echo $instance_id;
+?>
+<?php    
+$ec2_avail_zone = file_get_contents("http://169.254.169.254/latest/meta-data/placement/availability-zone");
 echo $ec2_avail_zone;
 ?>
-
 <?php
   /* Connect to MySQL and select . the database. */
   $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD);

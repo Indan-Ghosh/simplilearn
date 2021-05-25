@@ -6,10 +6,8 @@
 <?php  
 $instance_id = file_get_contents("http://169.254.169.254/latest/meta-data/instance-id");
 $ec2_avail_zone = file_get_contents("http://169.254.169.254/latest/meta-data/placement/availability-zone");
-$instance_text = "Instance ID:";
-$availzone_text = "Availability Zone:";
-echo $instance_text $instance_id;
-echo $availzone_text $ec2_avail_zone;
+echo $instance_id;
+echo $ec2_avail_zone;
 ?>
 
 <?php
